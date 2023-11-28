@@ -12,16 +12,16 @@ export default function CardBox({
   setIsOpen,
 }) {
   const cards = [
-    { image: "src/assets/Cards/card1.jpg", id: 1 },
-    { image: "src/assets/Cards/card2.jpg", id: 2 },
-    { image: "src/assets/Cards/card3.jpg", id: 3 },
-    { image: "src/assets/Cards/card4.jpg", id: 4 },
-    { image: "src/assets/Cards/card5.jpg", id: 5 },
-    { image: "src/assets/Cards/card6.jpg", id: 6 },
-    { image: "src/assets/Cards/card7.jpg", id: 7 },
-    { image: "src/assets/Cards/card8.jpg", id: 8 },
-    { image: "src/assets/Cards/card9.jpg", id: 9 },
-    { image: "src/assets/Cards/card10.jpg", id: 10 },
+    { image: "/card1.jpg", id: 1 },
+    { image: "/card2.jpg", id: 2 },
+    { image: "/card3.jpg", id: 3 },
+    { image: "/card4.jpg", id: 4 },
+    { image: "/card5.jpg", id: 5 },
+    { image: "/card6.jpg", id: 6 },
+    { image: "/card7.jpg", id: 7 },
+    { image: "/card8.jpg", id: 8 },
+    { image: "/card9.jpg", id: 9 },
+    { image: "/card10.jpg", id: 10 },
   ];
 
   function shuffle(array) {
