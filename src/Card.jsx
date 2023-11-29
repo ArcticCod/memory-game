@@ -10,6 +10,7 @@ export default function Card({
   highScore,
   setHighScore,
   setIsOpen,
+  isOpen,
 }) {
   return (
     <div className="fader">
@@ -18,19 +19,21 @@ export default function Card({
         id={`${card.id}`}
         style={{ backgroundImage: `url(${card.image})` }}
         onClick={() => {
-          if (!clickedCards.includes(card.id)) {
-            setScore(score + 1);
-            clickedCards.push(card.id);
-            setClickedCards(clickedCards);
-          } else {
-            console.log(clickedCards);
+          if (!isOpen) {
+            if (!clickedCards.includes(card.id)) {
+              setScore(score + 1);
+              clickedCards.push(card.id);
+              setClickedCards(clickedCards);
+            } else {
+              console.log(clickedCards);
 
-            if (score > highScore) {
-              setHighScore(score);
+              if (score > highScore) {
+                setHighScore(score);
+              }
+              // setScore(0);
+              setClickedCards([]);
+              setIsOpen(true);
             }
-            // setScore(0);
-            setClickedCards([]);
-            setIsOpen(true);
           }
         }}
       ></button>

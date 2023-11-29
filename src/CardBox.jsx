@@ -10,6 +10,7 @@ export default function CardBox({
   clickedCards,
   setClickedCards,
   setIsOpen,
+  isOpen,
 }) {
   const cards = [
     { image: "/card1.jpg", id: 1 },
@@ -44,6 +45,7 @@ export default function CardBox({
       {shuffle(cards).map((card) => {
         return (
           <Card
+            isOpen={isOpen}
             setIsOpen={setIsOpen}
             highScore={highScore}
             setHighScore={setHighScore}

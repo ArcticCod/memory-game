@@ -28,6 +28,7 @@ function App() {
           />
         )}
         <CardBox
+          isOpen={isOpen}
           clickedCards={clickedCards}
           setClickedCards={setClickedCards}
           highScore={highScore}
